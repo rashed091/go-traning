@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	"strings"
+	"unicode/utf8"
 )
 
-func	main() {
+func main() {
 	fmt.Println(strings.Contains("Tests", "es"))
 
 	fmt.Println(strings.Count("Rashed", "a"))
@@ -16,4 +17,9 @@ func	main() {
 
 	fmt.Println(string([]byte{'t', 'a', 's'}))
 
+	const s = "สวัสดี"
+
+	fmt.Println(s)
+	fmt.Println(len(s))
+	fmt.Println(utf8.RuneCountInString(s))
 }
