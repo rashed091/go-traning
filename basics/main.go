@@ -1,14 +1,25 @@
-package basics
+package main
 
 import (
 	"fmt"
+	"math"
 	"reflect"
 )
 
-func main()  {
+func main() {
 	var x = 4
 	fmt.Println(reflect.TypeOf(x))
 	fmt.Println(reflect.TypeOf(float32(x) * 5.5))
+
+	var a, b int = 1, 2
+	fmt.Println(a, b)
+	fmt.Println(math.Pow(float64(a), 5))
+
+	const n = 3.1416
+	fmt.Println(n)
+
+
+
 
 	var name string = "Rashed"
 	fmt.Println(name)
